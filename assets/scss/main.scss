@@ -1,3 +1,119 @@
-body {
-	background-color: rgb(0, 119, 128);
+@mixin button() {
+	display: inline-block;
+	text-decoration: none;
+}
+
+$small-width: 70%;
+$medium-width: 80%;
+$large-width: 90%;
+
+.wrapper {
+	width: 800px;
+
+.header {
+	text-align: center;
+	
+	&__nav {
+		margin-top: 30px;
+		display: flex;
+		justify-content: space-around;
+
+		&__button {
+			@include button();
+			font-size: 10px;
+			text-transform: uppercase;
+			color: #050505;
+			letter-spacing: 1px;
+
+			&:hover {
+				color: red;
+			}
+		}
+	}
+}
+
+.article {
+	width: $large-width;
+	margin: auto;
+	text-align: center;
+	margin-top: 20px;
+	background-color:#fafafa;
+	border: lightgray;
+	
+	&__backbutton {
+			@include button();
+			margin-top: 30px;
+			margin-bottom: 30px;
+			font-size: 15px;
+			letter-spacing: 1px;
+	}
+
+	&__title {
+		background-color: #fafafa;
+		padding-bottom: 30px;
+		margin: auto;
+		
+		&__img {
+			position: relative;
+			z-index: 1;
+			margin: auto;
+			width: $large-width;
+		}
+
+		&__head {
+			position: relative;
+
+			z-index: 100;
+			margin-top: -100px;
+			margin-left: 10%;
+			padding-top: 40px;
+			height: 100px;
+			background-color: #fafafa;
+		}
+
+		&__details {
+
+			&__date {
+
+			}
+
+			&__auteur {
+				
+			}
+		}
+
+	}
+
+	&__content {
+		margin: auto;
+		text-align: left;
+
+		&__basic {
+			
+			
+		}
+
+		&__intertitle {
+			color: red;
+
+		}
+		
+		&__illus {
+			
+		}
+
+		&__citation {
+			color: blue;
+
+		}
+
+		&__bigillus {
+			width: $large-width;
+		}
+
+	}
+
+
+}
+
 }

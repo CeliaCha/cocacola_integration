@@ -1,1 +1,1 @@
-"use strict";function log(o){console.log(o)}
+function log(o){console.log(o)}

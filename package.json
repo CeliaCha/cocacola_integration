@@ -12,12 +12,15 @@
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "browser-sync": "^2.23.6",
-    "gulp-babel": "^7.0.1",
     "gulp-clean-css": "^3.9.3",
     "gulp-sass": "^4.0.1",
-    "gulp-uglify": "^3.0.0"
+    "gulp-stylelint": "^7.0.0",
+    "gulp-uglify": "^3.0.0",
+    "stylelint": "^9.2.1"
   },
   "dependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-eslint": "^4.0.2"
   }
 }

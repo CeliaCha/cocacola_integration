@@ -1,1 +1,1 @@
-"use strict";log("initial commit");
+log("initial commit");
